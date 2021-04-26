@@ -16,11 +16,23 @@ class MainActivity : AppCompatActivity() {
         var count = 0
 
         subtraction.setOnClickListener {
-            text.text = count--.toString()
+            fun onClick(){
+                count-=1
+                text.text = count.toString()
+            }
+
+            onClick()
+
         }
 
         addition.setOnClickListener {
-           text.text = count++.toString()
+            fun onClick(){
+                count+=1
+                text.text = count.toString()
+            }
+
+            onClick()
+
         }
 
         
